@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: vazirmatn;
+}
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-sky-100 to-cyan-100;
+  }
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+    font-weight: 500;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-sm font-bold text-gray-500 overflow-hidden text-ellipsis whitespace-nowrap w-full block;
+  }
+  div,
+  input[type="text"],
+  textarea {
+    @apply rounded-3xl;
+  }
+  input[type="text"],
+  textarea {
+    @apply p-3;
+  }
+
+  a {
+    @apply text-sky-700;
+  }
+  .blue1 {
+    @apply bg-gradient-to-br from-sky-300 to-blue-500 transition-all duration-500 ease-in-out;
+  }
+  .blue2 {
+    @apply bg-gradient-to-br from-sky-400 to-blue-600 transition-all duration-500 ease-in-out;
+  }
+  .red1 {
+    @apply bg-gradient-to-br from-red-600 to-red-900;
+  }
+  .red2 {
+    @apply bg-gradient-to-br from-red-700 to-red-950;
+  }
+  .silver1 {
+    @apply bg-gradient-to-br from-slate-300 to-gray-600;
+  }
+  .silver2 {
+    @apply bg-gradient-to-br from-slate-400 to-gray-800;
+  }
+}
+
+.goal-input {
+  padding: 0 !important;
+  display: flex;
+}
