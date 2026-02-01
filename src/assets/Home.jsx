@@ -5,9 +5,11 @@ import TodayGoals from "./TodayGoals";
 import FocusChart from "./FocusChart";
 import BigCard from "./BigCard";
 import SmallCard from "./SmallCard";
+import { toFutureDays, freeDays, recentGoals } from "./shortViewContents";
+import { h3 } from "framer-motion/client";
 function Home() {
-
   return (
+
     <>
       <AppBar />
 
@@ -101,21 +103,16 @@ function Home() {
 
           </div>
           <div className="blue2 w-3/4 flex items-center justify-around text-center text-white flex-col md:flex-row p-4 gap-5">
+            <SmallCard title="اهداف اخیر شما">
+              {recentGoals.map((i) => <h3>{i}</h3>)}
+            </SmallCard>
+            <SmallCard title="روزهای آینده‌دار">
+              {toFutureDays.map((i) => <h3>{i}</h3>)}
+            </SmallCard>
+            <SmallCard title="روزهای رهایی">
+              {freeDays.map((i) => <h3>{i}</h3>)}
+            </SmallCard>
 
-            <div className="w-3/4 md:w-1/6 h-5/6 flex flex-col items-center justify-center shadow-light">
-              <h2>روزهای آینده‌دار </h2>
-              <h3>9 مهر 1404</h3>
-              <h3>6 مهر 1404</h3>
-              <h3>5 مهر 1404 </h3>
-              <h3>2 مهر 1404</h3>
-            </div>
-            <div className="w-3/4 md:w-1/6 h-5/6 flex flex-col items-center justify-center shadow-light">
-              <h2>روزهای رهایی </h2>
-              <h3>8 مهر 1404</h3>
-              <h3>7 مهر 1404</h3>
-              <h3>4 مهر 1404</h3>
-              <h3>1 مهر 1404</h3>
-            </div>
           </div>
         </main>
       </div>
