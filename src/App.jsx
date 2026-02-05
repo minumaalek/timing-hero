@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Home from "./assets/Home";
 import NewGoal from "./assets/NewGoal";
 import GoalsPage from "./assets/GoalsPage";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Welcome from "./assets/Welcome";
 import { ModalProvider } from "./assets/ModalContext";
 import Modal from "./assets/Modal";

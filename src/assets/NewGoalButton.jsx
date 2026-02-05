@@ -8,7 +8,7 @@ function NewGoalButton() {
             onClick={() => {
                 navigate("/NewGoal");
             }}
-            className="h-14 w-14 rounded-full fixed blue1 hover:blue2 bottom-5 left-5 flex justify-center items-center"
+            className="h-14 w-14 rounded-full fixed blue1 hover:blue2 bottom-5 left-5 flex justify-center items-center z-50"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"

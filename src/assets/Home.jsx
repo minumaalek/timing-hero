@@ -6,12 +6,14 @@ import FocusChart from "./FocusChart";
 import BigCard from "./BigCard";
 import SmallCard from "./SmallCard";
 import { toFutureDays, freeDays, recentGoals } from "./shortViewContents";
-import { h3 } from "framer-motion/client";
 function Home() {
   return (
 
     <>
-      <AppBar />
+      <div className="w-full">
+        <AppBar />
+      </div>
+
 
       <div className=" flex flex-col justify-center items-center gap-5 w-full">
         <NewGoalButton />
@@ -20,7 +22,7 @@ function Home() {
           <Header />
         </header>
 
-        <main className="w-full flex flex-col items-center gap-7 p-10">
+        <main className="w-full flex flex-col items-center gap-7">
           <div className=" flex flex-col justify-center items-center gap-10 w-full ">
             <div className="flex flex-col items-center w-full gap-3">
               <h2>امروز چیکاره‌ایم؟</h2>
@@ -112,7 +114,6 @@ function Home() {
             <SmallCard title="روزهای رهایی">
               {freeDays.map((i) => <h3>{i}</h3>)}
             </SmallCard>
-
           </div>
         </main>
       </div>

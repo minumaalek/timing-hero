@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/minumaalek/timing-hero",
+  "homepage": "https://minumaalek.github.io/timing-hero/#",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
   "name": "timing-hero",
@@ -11,9 +11,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^12.23.24",

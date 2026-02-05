@@ -48,7 +48,7 @@ function AppBar() {
             </svg>
           </div>
         </div>
-        <div className="flex flex-col text-white items-center justify-center">
+        <div className="flex flex-col text-white items-end justify-center">
           <span className="text-2xl font-extrabold">
             <DateAndTime type="time" />
           </span>
